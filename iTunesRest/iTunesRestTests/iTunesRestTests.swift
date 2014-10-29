@@ -15,6 +15,8 @@ import iTunesRest
 class RestTest : QuickSpec {
     override func spec() {
         describe("") {
+            afterSuite {
+            }
             it("HTTP success") {
                 var rr = RestResponse.HttpSuccess(201, "OK")
                 expect(rr.didSucceed()).to(beTruthy())

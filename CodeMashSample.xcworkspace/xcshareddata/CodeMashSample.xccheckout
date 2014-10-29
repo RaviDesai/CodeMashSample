@@ -24,9 +24,9 @@
 		<key>6A367FF5E7108469AF1CFFBE2D2FEA8F338AB603</key>
 		<string>..</string>
 		<key>95438028B10BBB846574013D29F154A00556A9D1</key>
-		<string>..Vendor/Quick/Externals/Nimble/</string>
+		<string>..Vendor/Quick/Externals/Nimble</string>
 		<key>D0725CAC6FF2D66F2C83C2C48DC12106D42DAA64</key>
-		<string>..Vendor/Quick/</string>
+		<string>..Vendor/Quick</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/RaviDesai/CodeMashSample.git</string>

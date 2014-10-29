@@ -1,551 +1,1137 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		413235121A0078FD00D3C4E5 /* libiTunesRest.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 413235061A0078FD00D3C4E5 /* libiTunesRest.dylib */; };
-		413235221A00794D00D3C4E5 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413235211A00794D00D3C4E5 /* RestResponse.swift */; };
-		41EEEE391A01440A00743A0A /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EEEE231A01437B00743A0A /* Quick.framework */; };
-		41EEEE3B1A01441600743A0A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EEEE3A1A01441600743A0A /* Nimble.framework */; };
-		41EEEE3D1A0144DF00743A0A /* iTunesRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		413235131A0078FD00D3C4E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 413234FE1A0078FD00D3C4E5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 413235051A0078FD00D3C4E5;
-			remoteInfo = iTunesRest;
-		};
-		41EEEE221A01437B00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAEB6B8E1943873100289F44;
-			remoteInfo = "Quick-OSX";
-		};
-		41EEEE241A01437B00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = DAEB6B991943873100289F44;
-			remoteInfo = "Quick-OSXTests";
-		};
-		41EEEE261A01437B00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5A5D117C19473F2100F6D13D;
-			remoteInfo = "Quick-iOS";
-		};
-		41EEEE281A01437B00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5A5D118619473F2100F6D13D;
-			remoteInfo = "Quick-iOSTests";
-		};
-		41EEEE311A01438F00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1A74291940169200FFFC47;
-			remoteInfo = "Nimble-iOS";
-		};
-		41EEEE331A01438F00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F1A74341940169200FFFC47;
-			remoteInfo = "Nimble-iOSTests";
-		};
-		41EEEE351A01438F00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F925EAD195C0D6300ED456B;
-			remoteInfo = "Nimble-OSX";
-		};
-		41EEEE371A01438F00743A0A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1F925EB7195C0D6300ED456B;
-			remoteInfo = "Nimble-OSXTests";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		413235061A0078FD00D3C4E5 /* libiTunesRest.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libiTunesRest.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		413235111A0078FD00D3C4E5 /* iTunesRestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iTunesRestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		413235171A0078FD00D3C4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		413235201A00794D00D3C4E5 /* iTunesRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTunesRest-Bridging-Header.h"; sourceTree = "<group>"; };
-		413235211A00794D00D3C4E5 /* RestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
-		41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = ../../Vendor/Quick/Quick.xcodeproj; sourceTree = "<group>"; };
-		41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = ../../Vendor/Nimble/Nimble.xcodeproj; sourceTree = "<group>"; };
-		41EEEE3A1A01441600743A0A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Vendor/Quick/Externals/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
-		41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesRestTests.swift; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		413235031A0078FD00D3C4E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4132350E1A0078FD00D3C4E5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41EEEE3B1A01441600743A0A /* Nimble.framework in Frameworks */,
-				41EEEE391A01440A00743A0A /* Quick.framework in Frameworks */,
-				413235121A0078FD00D3C4E5 /* libiTunesRest.dylib in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		413234FD1A0078FD00D3C4E5 = {
-			isa = PBXGroup;
-			children = (
-				41EEEE3A1A01441600743A0A /* Nimble.framework */,
-				413235081A0078FD00D3C4E5 /* iTunesRest */,
-				413235151A0078FD00D3C4E5 /* iTunesRestTests */,
-				413235071A0078FD00D3C4E5 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		413235071A0078FD00D3C4E5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				413235061A0078FD00D3C4E5 /* libiTunesRest.dylib */,
-				413235111A0078FD00D3C4E5 /* iTunesRestTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		413235081A0078FD00D3C4E5 /* iTunesRest */ = {
-			isa = PBXGroup;
-			children = (
-				413235211A00794D00D3C4E5 /* RestResponse.swift */,
-				413235201A00794D00D3C4E5 /* iTunesRest-Bridging-Header.h */,
-			);
-			path = iTunesRest;
-			sourceTree = "<group>";
-		};
-		413235151A0078FD00D3C4E5 /* iTunesRestTests */ = {
-			isa = PBXGroup;
-			children = (
-				41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */,
-				41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */,
-				413235161A0078FD00D3C4E5 /* Supporting Files */,
-				41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */,
-			);
-			path = iTunesRestTests;
-			sourceTree = "<group>";
-		};
-		413235161A0078FD00D3C4E5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				413235171A0078FD00D3C4E5 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		41EEEE1B1A01437B00743A0A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41EEEE231A01437B00743A0A /* Quick.framework */,
-				41EEEE251A01437B00743A0A /* QuickTests.xctest */,
-				41EEEE271A01437B00743A0A /* Quick.framework */,
-				41EEEE291A01437B00743A0A /* Quick-iOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		41EEEE2B1A01438F00743A0A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				41EEEE321A01438F00743A0A /* Nimble.framework */,
-				41EEEE341A01438F00743A0A /* NimbleTests.xctest */,
-				41EEEE361A01438F00743A0A /* Nimble.framework */,
-				41EEEE381A01438F00743A0A /* Nimble-OSXTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		413235041A0078FD00D3C4E5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		413235051A0078FD00D3C4E5 /* iTunesRest */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4132351A1A0078FD00D3C4E5 /* Build configuration list for PBXNativeTarget "iTunesRest" */;
-			buildPhases = (
-				413235021A0078FD00D3C4E5 /* Sources */,
-				413235031A0078FD00D3C4E5 /* Frameworks */,
-				413235041A0078FD00D3C4E5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = iTunesRest;
-			productName = iTunesRest;
-			productReference = 413235061A0078FD00D3C4E5 /* libiTunesRest.dylib */;
-			productType = "com.apple.product-type.library.dynamic";
-		};
-		413235101A0078FD00D3C4E5 /* iTunesRestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4132351D1A0078FD00D3C4E5 /* Build configuration list for PBXNativeTarget "iTunesRestTests" */;
-			buildPhases = (
-				4132350D1A0078FD00D3C4E5 /* Sources */,
-				4132350E1A0078FD00D3C4E5 /* Frameworks */,
-				4132350F1A0078FD00D3C4E5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				413235141A0078FD00D3C4E5 /* PBXTargetDependency */,
-			);
-			name = iTunesRestTests;
-			productName = iTunesRestTests;
-			productReference = 413235111A0078FD00D3C4E5 /* iTunesRestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		413234FE1A0078FD00D3C4E5 /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = RSD;
-				TargetAttributes = {
-					413235051A0078FD00D3C4E5 = {
-						CreatedOnToolsVersion = 6.1;
-					};
-					413235101A0078FD00D3C4E5 = {
-						CreatedOnToolsVersion = 6.1;
-					};
-				};
-			};
-			buildConfigurationList = 413235011A0078FD00D3C4E5 /* Build configuration list for PBXProject "iTunesRest" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 413234FD1A0078FD00D3C4E5;
-			productRefGroup = 413235071A0078FD00D3C4E5 /* Products */;
-			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 41EEEE2B1A01438F00743A0A /* Products */;
-					ProjectRef = 41EEEE2A1A01438F00743A0A /* Nimble.xcodeproj */;
-				},
-				{
-					ProductGroup = 41EEEE1B1A01437B00743A0A /* Products */;
-					ProjectRef = 41EEEE1A1A01437B00743A0A /* Quick.xcodeproj */;
-				},
-			);
-			projectRoot = "";
-			targets = (
-				413235051A0078FD00D3C4E5 /* iTunesRest */,
-				413235101A0078FD00D3C4E5 /* iTunesRestTests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		41EEEE231A01437B00743A0A /* Quick.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Quick.framework;
-			remoteRef = 41EEEE221A01437B00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE251A01437B00743A0A /* QuickTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			name = QuickTests.xctest;
-			path = "Quick-OSXTests.xctest";
-			remoteRef = 41EEEE241A01437B00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE271A01437B00743A0A /* Quick.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Quick.framework;
-			remoteRef = 41EEEE261A01437B00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE291A01437B00743A0A /* Quick-iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Quick-iOSTests.xctest";
-			remoteRef = 41EEEE281A01437B00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE321A01438F00743A0A /* Nimble.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Nimble.framework;
-			remoteRef = 41EEEE311A01438F00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE341A01438F00743A0A /* NimbleTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = NimbleTests.xctest;
-			remoteRef = 41EEEE331A01438F00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE361A01438F00743A0A /* Nimble.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Nimble.framework;
-			remoteRef = 41EEEE351A01438F00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		41EEEE381A01438F00743A0A /* Nimble-OSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "Nimble-OSXTests.xctest";
-			remoteRef = 41EEEE371A01438F00743A0A /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
-/* Begin PBXResourcesBuildPhase section */
-		4132350F1A0078FD00D3C4E5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		413235021A0078FD00D3C4E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				413235221A00794D00D3C4E5 /* RestResponse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4132350D1A0078FD00D3C4E5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				41EEEE3D1A0144DF00743A0A /* iTunesRestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		413235141A0078FD00D3C4E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 413235051A0078FD00D3C4E5 /* iTunesRest */;
-			targetProxy = 413235131A0078FD00D3C4E5 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		413235181A0078FD00D3C4E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		413235191A0078FD00D3C4E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		4132351B1A0078FD00D3C4E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iTunesRest/iTunesRest-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		4132351C1A0078FD00D3C4E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				EXECUTABLE_PREFIX = lib;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "iTunesRest/iTunesRest-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		4132351E1A0078FD00D3C4E5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					/Users/ravi/GitHub/CodeMashSample/Vendor/Quick/Externals/Nimble/build/Debug,
-				);
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = iTunesRestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Debug;
-		};
-		4132351F1A0078FD00D3C4E5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-					"$(inherited)",
-					/Users/ravi/GitHub/CodeMashSample/Vendor/Quick/Externals/Nimble/build/Debug,
-				);
-				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
-				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
-				INFOPLIST_FILE = iTunesRestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		413235011A0078FD00D3C4E5 /* Build configuration list for PBXProject "iTunesRest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				413235181A0078FD00D3C4E5 /* Debug */,
-				413235191A0078FD00D3C4E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4132351A1A0078FD00D3C4E5 /* Build configuration list for PBXNativeTarget "iTunesRest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4132351B1A0078FD00D3C4E5 /* Debug */,
-				4132351C1A0078FD00D3C4E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4132351D1A0078FD00D3C4E5 /* Build configuration list for PBXNativeTarget "iTunesRestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4132351E1A0078FD00D3C4E5 /* Debug */,
-				4132351F1A0078FD00D3C4E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 413234FE1A0078FD00D3C4E5 /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>1849557B06778962B7FD58EA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-iTunesRestTests.release.xcconfig</string>
+			<key>path</key>
+			<string>../Pods/Target Support Files/Pods-iTunesRestTests/Pods-iTunesRestTests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>1D681E2A2A81657B17C8D09C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-iTunesRestTests.debug.xcconfig</string>
+			<key>path</key>
+			<string>../Pods/Target Support Files/Pods-iTunesRestTests/Pods-iTunesRestTests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3EA83735A36E0851B6BC9E43</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E67BCF87F19C745AAD5E2FC1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>412187B41A0185EF00E544EE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.pb-project</string>
+			<key>name</key>
+			<string>Quick.xcodeproj</string>
+			<key>path</key>
+			<string>../../Vendor/Quick/Quick.xcodeproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>412187B51A0185EF00E544EE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>412187BD1A0185EF00E544EE</string>
+				<string>412187BF1A0185EF00E544EE</string>
+				<string>412187C11A0185EF00E544EE</string>
+				<string>412187C31A0185EF00E544EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>412187BC1A0185EF00E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187B41A0185EF00E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>DAEB6B8E1943873100289F44</string>
+			<key>remoteInfo</key>
+			<string>Quick-OSX</string>
+		</dict>
+		<key>412187BD1A0185EF00E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Quick.framework</string>
+			<key>remoteRef</key>
+			<string>412187BC1A0185EF00E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187BE1A0185EF00E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187B41A0185EF00E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>DAEB6B991943873100289F44</string>
+			<key>remoteInfo</key>
+			<string>Quick-OSXTests</string>
+		</dict>
+		<key>412187BF1A0185EF00E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Quick-OSXTests.xctest</string>
+			<key>remoteRef</key>
+			<string>412187BE1A0185EF00E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187C01A0185EF00E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187B41A0185EF00E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>5A5D117C19473F2100F6D13D</string>
+			<key>remoteInfo</key>
+			<string>Quick-iOS</string>
+		</dict>
+		<key>412187C11A0185EF00E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Quick.framework</string>
+			<key>remoteRef</key>
+			<string>412187C01A0185EF00E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187C21A0185EF00E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187B41A0185EF00E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>5A5D118619473F2100F6D13D</string>
+			<key>remoteInfo</key>
+			<string>Quick-iOSTests</string>
+		</dict>
+		<key>412187C31A0185EF00E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Quick-iOSTests.xctest</string>
+			<key>remoteRef</key>
+			<string>412187C21A0185EF00E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187C41A01860700E544EE</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.pb-project</string>
+			<key>name</key>
+			<string>Nimble.xcodeproj</string>
+			<key>path</key>
+			<string>../../Vendor/Nimble/Nimble.xcodeproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>412187C51A01860700E544EE</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>412187CC1A01860700E544EE</string>
+				<string>412187CE1A01860700E544EE</string>
+				<string>412187D01A01860700E544EE</string>
+				<string>412187D21A01860700E544EE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>412187CB1A01860700E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187C41A01860700E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>1F1A74291940169200FFFC47</string>
+			<key>remoteInfo</key>
+			<string>Nimble-iOS</string>
+		</dict>
+		<key>412187CC1A01860700E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Nimble.framework</string>
+			<key>remoteRef</key>
+			<string>412187CB1A01860700E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187CD1A01860700E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187C41A01860700E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>1F1A74341940169200FFFC47</string>
+			<key>remoteInfo</key>
+			<string>Nimble-iOSTests</string>
+		</dict>
+		<key>412187CE1A01860700E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>NimbleTests.xctest</string>
+			<key>remoteRef</key>
+			<string>412187CD1A01860700E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187CF1A01860700E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187C41A01860700E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>1F925EAD195C0D6300ED456B</string>
+			<key>remoteInfo</key>
+			<string>Nimble-OSX</string>
+		</dict>
+		<key>412187D01A01860700E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.framework</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Nimble.framework</string>
+			<key>remoteRef</key>
+			<string>412187CF1A01860700E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>412187D11A01860700E544EE</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>412187C41A01860700E544EE</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>2</string>
+			<key>remoteGlobalIDString</key>
+			<string>1F925EB7195C0D6300ED456B</string>
+			<key>remoteInfo</key>
+			<string>Nimble-OSXTests</string>
+		</dict>
+		<key>412187D21A01860700E544EE</key>
+		<dict>
+			<key>fileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>isa</key>
+			<string>PBXReferenceProxy</string>
+			<key>path</key>
+			<string>Nimble-OSXTests.xctest</string>
+			<key>remoteRef</key>
+			<string>412187D11A01860700E544EE</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>413234FD1A0078FD00D3C4E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>41EEEE3A1A01441600743A0A</string>
+				<string>413235081A0078FD00D3C4E5</string>
+				<string>413235151A0078FD00D3C4E5</string>
+				<string>413235071A0078FD00D3C4E5</string>
+				<string>446353A8EC36C75A470C3491</string>
+				<string>6E8ADFA12DE9B07621810A6F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413234FE1A0078FD00D3C4E5</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0610</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>RSD</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>413235051A0078FD00D3C4E5</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+					</dict>
+					<key>413235101A0078FD00D3C4E5</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.1</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>413235011A0078FD00D3C4E5</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>413234FD1A0078FD00D3C4E5</string>
+			<key>productRefGroup</key>
+			<string>413235071A0078FD00D3C4E5</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array>
+				<dict>
+					<key>ProductGroup</key>
+					<string>412187C51A01860700E544EE</string>
+					<key>ProjectRef</key>
+					<string>412187C41A01860700E544EE</string>
+				</dict>
+				<dict>
+					<key>ProductGroup</key>
+					<string>412187B51A0185EF00E544EE</string>
+					<key>ProjectRef</key>
+					<string>412187B41A0185EF00E544EE</string>
+				</dict>
+			</array>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>413235051A0078FD00D3C4E5</string>
+				<string>413235101A0078FD00D3C4E5</string>
+			</array>
+		</dict>
+		<key>413235011A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>413235181A0078FD00D3C4E5</string>
+				<string>413235191A0078FD00D3C4E5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>413235021A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>413235221A00794D00D3C4E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>413235031A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>413235041A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>413235051A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>4132351A1A0078FD00D3C4E5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>413235021A0078FD00D3C4E5</string>
+				<string>413235031A0078FD00D3C4E5</string>
+				<string>413235041A0078FD00D3C4E5</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>iTunesRest</string>
+			<key>productName</key>
+			<string>iTunesRest</string>
+			<key>productReference</key>
+			<string>413235061A0078FD00D3C4E5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.dynamic</string>
+		</dict>
+		<key>413235061A0078FD00D3C4E5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>compiled.mach-o.dylib</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libiTunesRest.dylib</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>413235071A0078FD00D3C4E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>413235061A0078FD00D3C4E5</string>
+				<string>413235111A0078FD00D3C4E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413235081A0078FD00D3C4E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>413235211A00794D00D3C4E5</string>
+				<string>413235201A00794D00D3C4E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>iTunesRest</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4132350D1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>41EEEE3D1A0144DF00743A0A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4132350E1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>41EEEE3B1A01441600743A0A</string>
+				<string>413235121A0078FD00D3C4E5</string>
+				<string>3EA83735A36E0851B6BC9E43</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>4132350F1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>413235101A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>4132351D1A0078FD00D3C4E5</string>
+			<key>buildPhases</key>
+			<array>
+				<string>F165D2060D647A3EAC59BD8B</string>
+				<string>4132350D1A0078FD00D3C4E5</string>
+				<string>4132350E1A0078FD00D3C4E5</string>
+				<string>4132350F1A0078FD00D3C4E5</string>
+				<string>EABEE8810F1FB10F6AC6996F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>413235141A0078FD00D3C4E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>iTunesRestTests</string>
+			<key>productName</key>
+			<string>iTunesRestTests</string>
+			<key>productReference</key>
+			<string>413235111A0078FD00D3C4E5</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>413235111A0078FD00D3C4E5</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>iTunesRestTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>413235121A0078FD00D3C4E5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>413235061A0078FD00D3C4E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>413235131A0078FD00D3C4E5</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>413234FE1A0078FD00D3C4E5</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>413235051A0078FD00D3C4E5</string>
+			<key>remoteInfo</key>
+			<string>iTunesRest</string>
+		</dict>
+		<key>413235141A0078FD00D3C4E5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>413235051A0078FD00D3C4E5</string>
+			<key>targetProxy</key>
+			<string>413235131A0078FD00D3C4E5</string>
+		</dict>
+		<key>413235151A0078FD00D3C4E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>412187C41A01860700E544EE</string>
+				<string>412187B41A0185EF00E544EE</string>
+				<string>413235161A0078FD00D3C4E5</string>
+				<string>41EEEE3C1A0144DF00743A0A</string>
+				<string>41EEEE401A017AF000743A0A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>iTunesRestTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413235161A0078FD00D3C4E5</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>413235171A0078FD00D3C4E5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413235171A0078FD00D3C4E5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413235181A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>413235191A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>DEBUG_INFORMATION_FORMAT</key>
+				<string>dwarf-with-dsym</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>MACOSX_DEPLOYMENT_TARGET</key>
+				<string>10.10</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SDKROOT</key>
+				<string>macosx</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>4132351A1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4132351B1A0078FD00D3C4E5</string>
+				<string>4132351C1A0078FD00D3C4E5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4132351B1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>iTunesRest/iTunesRest-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4132351C1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>EXECUTABLE_PREFIX</key>
+				<string>lib</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>iTunesRest/iTunesRest-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>4132351D1A0078FD00D3C4E5</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>4132351E1A0078FD00D3C4E5</string>
+				<string>4132351F1A0078FD00D3C4E5</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>4132351E1A0078FD00D3C4E5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1D681E2A2A81657B17C8D09C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+					<string>$(inherited)</string>
+					<string>/Users/ravi/GitHub/CodeMashSample/Vendor/Quick/Externals/Nimble/build/Debug</string>
+				</array>
+				<key>GCC_GENERATE_TEST_COVERAGE_FILES</key>
+				<string>YES</string>
+				<key>GCC_INSTRUMENT_PROGRAM_FLOW_ARCS</key>
+				<string>YES</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>iTunesRestTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>iTunesRestTests/iTunesRestTest-Bridging-Header.h</string>
+				<key>SWIFT_OPTIMIZATION_LEVEL</key>
+				<string>-Onone</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>4132351F1A0078FD00D3C4E5</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1849557B06778962B7FD58EA</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+					<string>$(inherited)</string>
+					<string>/Users/ravi/GitHub/CodeMashSample/Vendor/Quick/Externals/Nimble/build/Debug</string>
+				</array>
+				<key>GCC_GENERATE_TEST_COVERAGE_FILES</key>
+				<string>YES</string>
+				<key>GCC_INSTRUMENT_PROGRAM_FLOW_ARCS</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>iTunesRestTests/Info.plist</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
+				<string>iTunesRestTests/iTunesRestTest-Bridging-Header.h</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>413235201A00794D00D3C4E5</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iTunesRest-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413235211A00794D00D3C4E5</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>RestResponse.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>413235221A00794D00D3C4E5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>413235211A00794D00D3C4E5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>41EEEE3A1A01441600743A0A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Nimble.framework</string>
+			<key>path</key>
+			<string>../Vendor/Quick/Externals/Nimble/build/Debug/Nimble.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41EEEE3B1A01441600743A0A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>41EEEE3A1A01441600743A0A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>41EEEE3C1A0144DF00743A0A</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.swift</string>
+			<key>path</key>
+			<string>iTunesRestTests.swift</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41EEEE3D1A0144DF00743A0A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>41EEEE3C1A0144DF00743A0A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>41EEEE401A017AF000743A0A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>iTunesRestTest-Bridging-Header.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>446353A8EC36C75A470C3491</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>1D681E2A2A81657B17C8D09C</string>
+				<string>1849557B06778962B7FD58EA</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6E8ADFA12DE9B07621810A6F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>E67BCF87F19C745AAD5E2FC1</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E67BCF87F19C745AAD5E2FC1</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods-iTunesRestTests.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>EABEE8810F1FB10F6AC6996F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/../Pods/Target Support Files/Pods-iTunesRestTests/Pods-iTunesRestTests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>F165D2060D647A3EAC59BD8B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>413234FE1A0078FD00D3C4E5</string>
+</dict>
+</plist>
