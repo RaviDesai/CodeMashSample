@@ -11,12 +11,9 @@ import Quick
 import Nimble
 import iTunesRest
 
-
-class RestTest : QuickSpec {
+class ResponseEnumSpec : QuickSpec {
     override func spec() {
-        describe("") {
-            afterSuite {
-            }
+        describe("RestResponse tests") {
             it("HTTP success") {
                 var rr = RestResponse.HttpSuccess(201, "OK")
                 expect(rr.didSucceed()).to(beTruthy())
@@ -60,6 +57,30 @@ class RestTest : QuickSpec {
                     fail("should have produced a json error")
                 }
                 
+            }
+        }
+    }
+}
+
+class HTTPTests : QuickSpec {
+    var called = false;
+    override func spec() {
+        describe("HTTP tests") {
+            beforeSuite {
+                LSNocilla.sharedInstance().start();
+            }
+            afterSuite {
+                LSNocilla.sharedInstance().stop();
+            }
+            beforeEach {
+                self.called = false;
+            }
+            afterEach {
+                LSNocilla.sharedInstance().clearStubs();
+            }
+            it("called") {
+                let req = stubRequest("GET", "http://api.rsd.com").withHeader()("Accept", "application/json").andReturn()(200).withHeader()("Content-Type", "application/json").withBody()("{\"ok\": true}");
+                expect(req).toNot(beNil())
             }
         }
     }
