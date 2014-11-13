@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "iTunesRest.RestCalls.connectionDidFinishLoading (iTunesRest.RestCalls)(Swift.ImplicitlyUnwrappedOptional&lt;ObjectiveC.NSURLConnection&gt;) -&gt; ():RestCalls.swift">
+      </ContextState>
+      <ContextState
+         contextName = "iTunesRestTests.JSONParsingTests.(spec (iTunesRestTests.JSONParsingTests) -&gt; () -&gt; ()).(closure #1).(closure #1):iTunesRestTests.swift">
+      </ContextState>
+      <ContextState
+         contextName = "-[LSStubRequest matchesMethod:]:LSStubRequest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.method">
+            </PersistentString>
+            <PersistentString
+               value = "request.method">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "stubRequest:LSStubRequestDSL.m">
+      </ContextState>
+      <ContextState
+         contextName = "iTunesRest.RestCalls.configureForGet (iTunesRest.RestCalls)(Swift.String) -&gt; Swift.Bool:RestCalls.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "mutableRequest.HTTPMethod">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
