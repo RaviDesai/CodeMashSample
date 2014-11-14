@@ -319,6 +319,17 @@ class JSONParsingTests : QuickSpec {
                 var results = json!["results"]! as NSArray
                 var testCount = results.count
                 expect(resultCount).to(equal(testCount))
+                /*
+                var iTunesRecords = [iTunesRecord]();
+                for result in results {
+                    if let dict = result >>- toDictionary {
+                        if let result = iTunesRecord.createFromJson(dict) {
+                            iTunesRecords.append(result)
+                        }
+                    }
+                }
+                */
+                
             }
 
         }

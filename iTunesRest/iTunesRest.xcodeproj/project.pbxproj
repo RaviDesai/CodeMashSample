@@ -14,6 +14,7 @@
 		413235221A00794D00D3C4E5 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413235211A00794D00D3C4E5 /* RestResponse.swift */; };
 		4168B3C11A166B7B008FD153 /* JSONFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168B3C01A166B7B008FD153 /* JSONFunctions.swift */; };
 		41CC5CBA1A0E87C900793F7B /* RestCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC5CB91A0E87C900793F7B /* RestCalls.swift */; };
+		41D39A601A166D0E002490EC /* iTunesRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D39A5F1A166D0E002490EC /* iTunesRecord.swift */; };
 		41EEEE3B1A01441600743A0A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EEEE3A1A01441600743A0A /* Nimble.framework */; };
 		41EEEE3D1A0144DF00743A0A /* iTunesRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */; };
 /* End PBXBuildFile section */
@@ -98,6 +99,7 @@
 		413235211A00794D00D3C4E5 /* RestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
 		4168B3C01A166B7B008FD153 /* JSONFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFunctions.swift; sourceTree = "<group>"; };
 		41CC5CB91A0E87C900793F7B /* RestCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestCalls.swift; sourceTree = "<group>"; };
+		41D39A5F1A166D0E002490EC /* iTunesRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesRecord.swift; sourceTree = "<group>"; };
 		41EEEE3A1A01441600743A0A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Vendor/Quick/Externals/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
 		41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesRestTests.swift; sourceTree = "<group>"; };
 		41EEEE401A017AF000743A0A /* iTunesRestTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTunesRestTest-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				412187DB1A01C94400E544EE /* StringExtensions.swift */,
 				41CC5CB91A0E87C900793F7B /* RestCalls.swift */,
 				4168B3C01A166B7B008FD153 /* JSONFunctions.swift */,
+				41D39A5F1A166D0E002490EC /* iTunesRecord.swift */,
 			);
 			path = iTunesRest;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412187DC1A01C94400E544EE /* StringExtensions.swift in Sources */,
+				41D39A601A166D0E002490EC /* iTunesRecord.swift in Sources */,
 				4168B3C11A166B7B008FD153 /* JSONFunctions.swift in Sources */,
 				41CC5CBA1A0E87C900793F7B /* RestCalls.swift in Sources */,
 				413235221A00794D00D3C4E5 /* RestResponse.swift in Sources */,
