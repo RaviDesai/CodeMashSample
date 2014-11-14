@@ -12,6 +12,7 @@
 		412187E61A01C9D200E544EE /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412187E51A01C9D200E544EE /* StringExtensionsTests.swift */; };
 		413235121A0078FD00D3C4E5 /* libiTunesRest.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 413235061A0078FD00D3C4E5 /* libiTunesRest.dylib */; };
 		413235221A00794D00D3C4E5 /* RestResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413235211A00794D00D3C4E5 /* RestResponse.swift */; };
+		4168B3C11A166B7B008FD153 /* JSONFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168B3C01A166B7B008FD153 /* JSONFunctions.swift */; };
 		41CC5CBA1A0E87C900793F7B /* RestCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CC5CB91A0E87C900793F7B /* RestCalls.swift */; };
 		41EEEE3B1A01441600743A0A /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EEEE3A1A01441600743A0A /* Nimble.framework */; };
 		41EEEE3D1A0144DF00743A0A /* iTunesRestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */; };
@@ -95,6 +96,7 @@
 		413235171A0078FD00D3C4E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413235201A00794D00D3C4E5 /* iTunesRest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iTunesRest-Bridging-Header.h"; sourceTree = "<group>"; };
 		413235211A00794D00D3C4E5 /* RestResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestResponse.swift; sourceTree = "<group>"; };
+		4168B3C01A166B7B008FD153 /* JSONFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONFunctions.swift; sourceTree = "<group>"; };
 		41CC5CB91A0E87C900793F7B /* RestCalls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestCalls.swift; sourceTree = "<group>"; };
 		41EEEE3A1A01441600743A0A /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Vendor/Quick/Externals/Nimble/build/Debug/Nimble.framework; sourceTree = "<group>"; };
 		41EEEE3C1A0144DF00743A0A /* iTunesRestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesRestTests.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 				413235201A00794D00D3C4E5 /* iTunesRest-Bridging-Header.h */,
 				412187DB1A01C94400E544EE /* StringExtensions.swift */,
 				41CC5CB91A0E87C900793F7B /* RestCalls.swift */,
+				4168B3C01A166B7B008FD153 /* JSONFunctions.swift */,
 			);
 			path = iTunesRest;
 			sourceTree = "<group>";
@@ -321,7 +324,6 @@
 		412187BF1A0185EF00E544EE /* Quick-OSXTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
-			name = QuickTests.xctest;
 			path = "Quick-OSXTests.xctest";
 			remoteRef = 412187BE1A0185EF00E544EE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -419,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				412187DC1A01C94400E544EE /* StringExtensions.swift in Sources */,
+				4168B3C11A166B7B008FD153 /* JSONFunctions.swift in Sources */,
 				41CC5CBA1A0E87C900793F7B /* RestCalls.swift in Sources */,
 				413235221A00794D00D3C4E5 /* RestResponse.swift in Sources */,
 			);

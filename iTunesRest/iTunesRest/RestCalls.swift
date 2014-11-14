@@ -8,9 +8,6 @@
 
 import Foundation
 
-public typealias JSON = AnyObject
-public typealias JSONDictionary = [String: JSON]
-public typealias JSONArray = [JSON]
 public typealias RestCallbackFunction = (request: NSURLRequest?, response: RestResponse, result: JSON?) -> Void
 
 @objc public class RestCalls {
