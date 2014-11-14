@@ -11,10 +11,10 @@ import Foundation
 public typealias JSON = AnyObject
 public typealias JSONDictionary = [String: JSON]
 public typealias JSONArray = [JSON]
-public typealias RestCallbackFunction = (request: NSURLRequest?, error: NSError?, result: JSONDictionary?) -> Void
+public typealias RestCallbackFunction = (request: NSURLRequest?, response: RestResponse, result: JSON?) -> Void
 
 @objc public class RestCalls {
-    public var result: JSONDictionary?
+    public var result: JSON?
     
     private let callback : RestCallbackFunction
     private let startImmediately: Bool
@@ -23,6 +23,7 @@ public typealias RestCallbackFunction = (request: NSURLRequest?, error: NSError?
     private var conn: NSURLConnection?
     private var url: NSURL?
     private var request: NSURLRequest?
+    private var response: NSHTTPURLResponse?
     
     public init(startImmediately: Bool, callback: RestCallbackFunction) {
         self.callback = callback
@@ -45,7 +46,7 @@ public typealias RestCallbackFunction = (request: NSURLRequest?, error: NSError?
         
         if result == nil {
             var err = NSError(domain: "iTunesRest", code: 99, userInfo: [NSLocalizedDescriptionKey: "Bad URL for RestCall.  Cannot connect."])
-            self.callback(request: self.request, error: err, result: nil)
+            self.callback(request: self.request, response: RestResponse.SystemFailure(err), result: nil)
         }
         return result
     }
@@ -66,7 +67,7 @@ public typealias RestCallbackFunction = (request: NSURLRequest?, error: NSError?
         
         if !result {
             var err = NSError(domain: "iTunesRest", code: 99, userInfo: [NSLocalizedDescriptionKey: "Bad URL for RestCall.  Cannot connect."])
-            self.callback(request: self.request, error: err, result: nil)
+            self.callback(request: self.request, response: RestResponse.SystemFailure(err), result: nil)
         }
         return result;
     }
@@ -109,6 +110,7 @@ public typealias RestCallbackFunction = (request: NSURLRequest?, error: NSError?
     }
     
     func connection(connection: NSURLConnection!, didReceiveResponse response: NSURLResponse) {
+        self.response = response as? NSHTTPURLResponse
         self.data.length = 0;
     }
     
@@ -117,26 +119,28 @@ public typealias RestCallbackFunction = (request: NSURLRequest?, error: NSError?
     }
     
     func connection(connection: NSURLConnection!, didFailWithError error: NSError) {
-        self.callback(request: self.request, error: error, result: nil)
+        self.callback(request: self.request, response: RestResponse.SystemFailure(error), result: nil)
     }
 
     func connectionDidFinishLoading(connection: NSURLConnection!) {
-        var jsonString = NSString(data: self.data, encoding: NSUTF8StringEncoding);
+        var restResponse: RestResponse = RestResponse.HttpFailure(0, "no HTTP response received");
         
-        var jsonErrorOptional: NSError?;
-        var jsonOptional : JSON? = NSJSONSerialization.JSONObjectWithData(self.data, options: NSJSONReadingOptions(0), error: &jsonErrorOptional);
-        
-        var error = jsonErrorOptional;
-        
-        if error == nil {
-            if let jsonDictionary = jsonOptional as? JSONDictionary {
-                self.result = jsonDictionary
+        if let httpResponse = self.response {
+            if (httpResponse.statusCode >= 200 && httpResponse.statusCode < 300) {
+                restResponse = RestResponse.HttpSuccess(httpResponse.statusCode, httpResponse.description)
+                var jsonString = NSString(data: self.data, encoding: NSUTF8StringEncoding);
+                
+                var jsonErrorOptional: NSError?;
+                self.result = NSJSONSerialization.JSONObjectWithData(self.data, options: NSJSONReadingOptions(0), error: &jsonErrorOptional);
+                
+                if let error = jsonErrorOptional {
+                    restResponse = RestResponse.JsonFailure(error)
+                }
+            } else {
+                restResponse = RestResponse.HttpFailure(httpResponse.statusCode, httpResponse.description)
             }
         }
         
-        self.callback(request: self.request, error: error, result: self.result)
-    }
-    
-    
-    
+        self.callback(request: self.request, response: restResponse, result: self.result)
+    }    
 }

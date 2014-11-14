@@ -95,12 +95,12 @@ class HTTPTests : QuickSpec {
                 expect(req).toNot(beNil())
                 var returnedResult: JSONDictionary?
                 var returnedRequest: NSURLRequest?
-                var returnedError: NSError?
+                var returnedResponse: RestResponse?
                 
-                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, error: NSError?, result: JSONDictionary?) -> Void in
+                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, response: RestResponse, result: JSON?) -> Void in
                     returnedRequest = request
-                    returnedError = error
-                    returnedResult = result
+                    returnedResponse = response
+                    returnedResult = result as? JSONDictionary
                     self.called = true
                 });
                 
@@ -110,8 +110,8 @@ class HTTPTests : QuickSpec {
                 expect(result).to(beTruthy())
                 
                 self.loopUntilCalled(runLoop);
-                
-                expect(returnedError).to(beNil())
+                expect(returnedResponse).toNot(beNil())
+                expect(returnedResponse!.didSucceed()).to(beTruthy())
                 expect(returnedRequest).toNot(beNil())
                 expect(returnedResult).toNot(beNil())
                 var jsonData = returnedResult!
@@ -130,12 +130,12 @@ class HTTPTests : QuickSpec {
                 expect(req).toNot(beNil())
                 var returnedResult: JSONDictionary?
                 var returnedRequest: NSURLRequest?
-                var returnedError: NSError?
+                var returnedResponse: RestResponse?
                 
-                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, error: NSError?, result: JSONDictionary?) -> Void in
+                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, response: RestResponse, result: JSON?) -> Void in
                     returnedRequest = request
-                    returnedError = error
-                    returnedResult = result
+                    returnedResponse = response
+                    returnedResult = result as? JSONDictionary
                     self.called = true
                 });
                 
@@ -146,7 +146,8 @@ class HTTPTests : QuickSpec {
                 
                 self.loopUntilCalled(runLoop);
                 
-                expect(returnedError).to(beNil())
+                expect(returnedResponse).toNot(beNil())
+                expect(returnedResponse!.didSucceed()).to(beTruthy())
                 expect(returnedRequest).toNot(beNil())
                 expect(returnedResult).toNot(beNil())
                 var jsonData = returnedResult!
@@ -168,12 +169,12 @@ class HTTPTests : QuickSpec {
                 expect(req).toNot(beNil())
                 var returnedResult: JSONDictionary?
                 var returnedRequest: NSURLRequest?
-                var returnedError: NSError?
+                var returnedResponse: RestResponse?
                 
-                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, error: NSError?, result: JSONDictionary?) -> Void in
+                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, response: RestResponse, result: JSON?) -> Void in
                     returnedRequest = request
-                    returnedError = error
-                    returnedResult = result
+                    returnedResponse = response
+                    returnedResult = result as? JSONDictionary
                     self.called = true
                 });
                 
@@ -184,7 +185,8 @@ class HTTPTests : QuickSpec {
                 
                 self.loopUntilCalled(runLoop);
                 
-                expect(returnedError).to(beNil())
+                expect(returnedResponse).toNot(beNil())
+                expect(returnedResponse!.didSucceed()).to(beTruthy())
                 expect(returnedRequest).toNot(beNil())
                 expect(returnedResult).toNot(beNil())
                 var jsonData = returnedResult!
@@ -209,12 +211,12 @@ class HTTPTests : QuickSpec {
                 expect(req).toNot(beNil())
                 var returnedResult: JSONDictionary?
                 var returnedRequest: NSURLRequest?
-                var returnedError: NSError?
+                var returnedResponse: RestResponse?
                 
-                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, error: NSError?, result: JSONDictionary?) -> Void in
+                var caller = RestCalls(startImmediately: false, callback: {(request: NSURLRequest?, response: RestResponse, result: JSON?) -> Void in
                     returnedRequest = request
-                    returnedError = error
-                    returnedResult = result
+                    returnedResponse = response
+                    returnedResult = result as? JSONDictionary
                     self.called = true
                 });
                 
@@ -225,7 +227,8 @@ class HTTPTests : QuickSpec {
                 
                 self.loopUntilCalled(runLoop);
                 
-                expect(returnedError).to(beNil())
+                expect(returnedResponse).toNot(beNil())
+                expect(returnedResponse!.didSucceed()).to(beTruthy())
                 expect(returnedRequest).toNot(beNil())
                 expect(returnedResult).toNot(beNil())
                 var jsonData = returnedResult!
